@@ -1,20 +1,26 @@
-# Arquivos institucionais originais da disciplina (nao versionar)
-1675082940888.pdf
-Modelo de Atividade Textual (1).docx
-
-# Arquivos temporarios do Microsoft Office / Word
+# Arquivos temporários do Microsoft Word e sistema
 ~$*.docx
 ~$*.doc
 *.tmp
-
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-.venv/
-venv/
-
-# Sistema operacional
-.DS_Store
 Thumbs.db
 desktop.ini
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Arquivos institucionais originais da faculdade (preservados localmente, não versionados)
+1675082940888.pdf
+Modelo de Atividade Textual (1).docx
+
+# Artefatos residuais de execução anterior (preservados localmente, não versionados)
+dados_relatorio.json
+evidencias/
+scripts/
+sql/01_schema_local_mysql56.sql
+sql/sqlfiddle_01_schema_ddl_dml.sql
+sql/sqlfiddle_02_consultas_join.sql
+
+# Automação local e PDF duplicado da raiz (a versão do portfólio fica em docs/)
+gerar_evidencias_e_relatorio.ps1
+Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf
