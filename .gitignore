@@ -1,0 +1,20 @@
+# Arquivos institucionais originais da disciplina (nao versionar)
+1675082940888.pdf
+Modelo de Atividade Textual (1).docx
+
+# Arquivos temporarios do Microsoft Office / Word
+~$*.docx
+~$*.doc
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini

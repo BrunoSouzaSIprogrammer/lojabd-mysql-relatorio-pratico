@@ -1,0 +1,14 @@
+{
+  "instituicao": "[INFORMAR NOME DA INSTITUIÇÃO]",
+  "curso": "[INFORMAR NOME DO CURSO]",
+  "autor": "Bruno Souza",
+  "titulo": "RELATÓRIO DE AULA PRÁTICA:",
+  "subtitulo": "Gerenciamento e Desenvolvimento em Banco de Dados — Modelagem e Consultas SQL no SQL Fiddle",
+  "natureza_trabalho": "Relatório de aula prática apresentado à disciplina de Gerenciamento e Desenvolvimento em Banco de Dados como requisito parcial para a obtenção de média semestral.",
+  "orientador": "Orientadora: Profª [INFORMAR NOME DO(A) ORIENTADOR(A)]",
+  "cidade": "[INFORMAR CIDADE - UF]",
+  "ano": "2026",
+  "data_acesso_abnt": "22 nov. 2026",
+  "arquivo_saida_docx": "Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.docx",
+  "arquivo_saida_pdf": "Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf"
+}
