@@ -7,7 +7,7 @@
 
 Projeto prático da disciplina **Gerenciamento e Desenvolvimento em Banco de Dados** (**UNIDERP - Universidade Anhanguera** — Curso de **Sistema da Informação**, Uberlândia/MG), desenvolvido por **Bruno Cardoso De Oliveira Souza**.
 
-Implementa a modelagem relacional, criação estrutural (**DDL**), carga inicial (**DML**) e consultas com junções (**DQL / `JOIN`**) para o banco de dados **LOJABD**, com comprovação de execução real no [SQL Fiddle](http://sqlfiddle.com/) e relatório acadêmico completo em normas **ABNT**.
+Implementa a modelagem relacional, criação estrutural (**DDL**), carga inicial (**DML**) e consultas com junções (**DQL / `JOIN`**) para o banco de dados **LOJABD**, com comprovação de execução real no [SQL Fiddle](https://sqlfiddle.com/) e relatório acadêmico completo em normas **ABNT**.
 
 ---
 
@@ -73,10 +73,12 @@ erDiagram
 ## ⚙️ Etapas Desenvolvidas
 
 ### 1. DDL — Estruturação do Banco `LOJABD` ([`sql/01_ddl_lojabd.sql`](sql/01_ddl_lojabd.sql))
+
 - Criação das tabelas `CLIENTE` (`AUTO_INCREMENT` na PK `codigo`), `PRODUTO` (`AUTO_INCREMENT` na PK `id`) e `COMPRA` (PK `numero` e chaves estrangeiras `fk_compra_cliente` e `fk_compra_produto` em `InnoDB` UTF-8).
 - *Nota sobre o SQL Fiddle:* o ambiente online provisiona automaticamente o banco temporário da sessão (`sandbox_db`), retornando `ERROR 1044` para `CREATE DATABASE`. Por isso, [`sql/sqlfiddle_schema_ddl_dml.sql`](sql/sqlfiddle_schema_ddl_dml.sql) mantém `CREATE DATABASE`/`USE` comentados para execução direta no compilador web, enquanto `01_ddl_lojabd.sql` preserva os comandos completos para instâncias MySQL locais.
 
 ### 2. DML — Carga de Dados ([`sql/02_dml_inserts.sql`](sql/02_dml_inserts.sql))
+
 - Inserção dos **7 clientes** (destaque para `Rian`, sem compras vinculadas), **4 produtos** e **10 compras**.
 - Datas calculadas com aritmética padrão MySQL (`CURRENT_DATE() +/- INTERVAL N DAY`) e `valor_compra = quantidade_comprada * valor`.
 
@@ -89,6 +91,7 @@ erDiagram
 | **Consulta 3** | `SELECT DISTINCT`, `INNER JOIN`, `< CURRENT_DATE()` | Retornar clientes únicos e telefones com compras anteriores à data atual (`Caio`, `Marcos`, `Penelope`) (3 linhas) | [Abrir Execução](https://sqlfiddle.com/mysql/online-compiler?id=594eaf73-4c69-49fb-8653-bbeed2d0ebaa) |
 
 Outros links de execução direta no SQL Fiddle:
+
 - [DDL + Verificação da versão MySQL e tabelas criadas](https://sqlfiddle.com/mysql/online-compiler?id=d7959477-fea1-4c15-822b-15cc422f3116)
 - [Verificação DML das tabelas `CLIENTE`, `PRODUTO` e `COMPRA`](https://sqlfiddle.com/mysql/online-compiler?id=1351ce2e-7ec3-4b75-9e13-995948ef480f)
 
@@ -97,18 +100,23 @@ Outros links de execução direta no SQL Fiddle:
 ## 🖼️ Evidências Reais no SQL Fiddle
 
 ### Criação das Tabelas (DDL) e Verificação do Banco
+
 ![DDL e Versão MySQL](screenshots/01_ddl_dml_e_versao.png)
 
 ### Verificação dos Dados Inseridos (DML)
+
 ![Verificação DML](screenshots/02_verificacao_tabelas_dml.png)
 
 ### Consulta 1 — Vendas Ordenadas (`INNER JOIN`)
+
 ![Consulta 1 INNER JOIN](screenshots/03_consulta_01_inner_join.png)
 
 ### Consulta 2 — Todos os Clientes com `NULL` para Não Compradores (`LEFT JOIN`)
+
 ![Consulta 2 LEFT JOIN](screenshots/04_consulta_02_left_join.png)
 
 ### Consulta 3 — Clientes Únicos Antes da Data Atual (`DISTINCT` + `INNER JOIN`)
+
 ![Consulta 3 DISTINCT](screenshots/05_consulta_03_distinct_before_today.png)
 
 ---
@@ -116,6 +124,7 @@ Outros links de execução direta no SQL Fiddle:
 ## 📄 Relatório Completo (ABNT)
 
 O relatório acadêmico completo formatado segundo as normas ABNT e o Modelo de Atividade Textual institucional encontra-se disponível em:
+
 - [`docs/Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf`](docs/Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf)
 
 ---

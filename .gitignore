@@ -22,5 +22,5 @@ sql/sqlfiddle_01_schema_ddl_dml.sql
 sql/sqlfiddle_02_consultas_join.sql
 
 # Automação local e PDF duplicado da raiz (a versão do portfólio fica em docs/)
-gerar_evidencias_e_relatorio.ps1
-Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf
+/gerar_evidencias_e_relatorio.ps1
+/Relatorio_Aula_Pratica_Banco_de_Dados_Bruno_Souza.pdf
